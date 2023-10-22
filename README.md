@@ -11,4 +11,5 @@ Bharat Sankhya quickly get Indian word for a selected.
 - Color gradient based on size of the number
 - Max limit 999999999999999999.99
 
-![](images/sr.mov)
+
+<video width="630" height="300" src="https://github.com/rajnandan1/BharatSankhya/raw/main/images/sr.mov"></video>
