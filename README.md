@@ -1,5 +1,7 @@
 # BharatSankhya
+
 ![Made with Love in India](https://madewithlove.org.in/badge.svg)
+
 Bharat Sankhya quickly get Indian word for a selected.
 
 ## Features
