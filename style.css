@@ -1,0 +1,96 @@
+#BharatSankhyaPop {
+    transition: transform 0.2s ease-in-out;
+	z-index: 214000000;
+}
+#BharatSankhyaPop .popper {
+    background-image: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), #141414);
+    /* background-repeat: repeat-x; */
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    pointer-events: none;
+}
+#BharatSankhyaPop .popper--visible {
+    pointer-events: auto;
+    animation: BharatSankhyaPoppop-upwards 180ms forwards linear;
+    animation-delay: 0.2s;
+    transition: opacity 0s linear 0.2s;
+}
+
+
+
+@keyframes BharatSankhyaPoppop-upwards {
+    0% {
+        transform: matrix(0.97, 0, 0, 1, 0, 12);
+        opacity: 0;
+    }
+
+    20% {
+        transform: matrix(0.99, 0, 0, 1, 0, 2);
+        opacity: 0.7;
+    }
+
+    40% {
+        transform: matrix(1, 0, 0, 1, 0, -1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+}
+ 
+#BharatSankhyaPop .bubble-bottom {
+    --size: 50px;
+    position: relative;
+    height: fit-content;
+    /* height: calc(var(--size) * 0.66); */
+    border-radius: 4px;
+    line-height: 1.2rem;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+#BharatSankhyaPop .textnumber {
+    background: #f1aae0;
+    background: linear-gradient(to right, #f1aae0 0%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/* "Thousand|Lakh|Crore|Arab|Kharab|Nil".split("|"); */
+#BharatSankhyaPop .textnumber.thousand {
+    background: #55ddff;
+    background: linear-gradient(to right, #55ddff 0%, #f1aae0 50%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#BharatSankhyaPop .textnumber.lakh {
+    background: #a0fa4e;
+    background: linear-gradient(to right, #a0fa4e 0%, #55ddff 33%, #f1aae0 66%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#BharatSankhyaPop .textnumber.crore {
+    background: #fffd54;
+    background: linear-gradient(to right, #fffd54 0%, #a0fa4e 25%, #55ddff 50%, #f1aae0 75%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#BharatSankhyaPop .textnumber.arab {
+    background: #f19d38;
+    background: linear-gradient(to right, #f19d38 0%, #fffd54 20%, #a0fa4e 40%, #55ddff 60%, #f1aae0 80%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#BharatSankhyaPop .textnumber.kharab {
+    background: #ea3223;
+    background: linear-gradient(to right, #ea3223 0%, #f19d38 16%, #fffd54 32%, #a0fa4e 48%, #55ddff 64%, #f1aae0 83%, #fefefe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
