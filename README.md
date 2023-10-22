@@ -12,4 +12,4 @@ Bharat Sankhya quickly get Indian word for a selected.
 - Max limit 999999999999999999.99
 
 
-<video width="630" height="300" src="https://github.com/rajnandan1/BharatSankhya/raw/main/images/sr.mov"></video>
+<video width="630" height="300" src="https://raw.githubusercontent.com/rajnandan1/BharatSankhya/raw/main/images/sr.mov"></video>
