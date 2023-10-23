@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Sankhya",
-    "version": "1.3",
+    "version": "1.4",
     "description": "Sankhya quickly shows the Indian word for a selected number.",
     "permissions": ["activeTab"],
     "content_scripts": [
@@ -15,16 +15,16 @@
     ],
     "author": "Raj Nandan Sharma",
     "icons": {
-        "16": "images/logo16.png",
-        "48": "images/logo48.png",
-        "128": "images/logo128.png"
+        "16": "images/sankhya_logo16.png",
+        "48": "images/sankhya_logo48.png",
+        "128": "images/sankhya_logo128.png"
     },
     "action": {
         "default_popup": "home.html",
         "default_icon": {
-            "16": "images/logo16.png",
-            "48": "images/logo48.png",
-            "128": "images/logo128.png"
+            "16": "images/sankhya_logo16.png",
+            "48": "images/sankhya_logo48.png",
+            "128": "images/sankhya_logo128.png"
         }
     },
     "browser_specific_settings": {

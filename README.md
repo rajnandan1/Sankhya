@@ -18,4 +18,4 @@ https://github.com/rajnandan1/BharatSankhya/assets/16224367/d8947cc9-d35a-4a96-a
 
 ## Contribution
 - Fork the repo -> Edit -> Raise a PR
-- For mozilla change the manifest version 2 from 3
+- For mozilla change the manifest version to 2 from 3
