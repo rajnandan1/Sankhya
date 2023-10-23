@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Bharat Sankhya",
+    "name": "Sankhya",
     "version": "1.0",
-    "description": "Bharat Sankhya quickly get Indian word for a selected",
+    "description": "Sankhya quickly shows the Indian word for a selected number.",
     "permissions": ["activeTab"],
     "content_scripts": [
         {
