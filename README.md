@@ -12,7 +12,7 @@ Sankhya quickly shows the Indian word for a selected number.
 - Max limit 999999999999999999.99
 
 
-
+## [Demo](https://rajnandan1.github.io/Sankhya/index.html)
 
 https://github.com/rajnandan1/BharatSankhya/assets/16224367/d8947cc9-d35a-4a96-a011-da29a93af961
 

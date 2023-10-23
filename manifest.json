@@ -20,7 +20,7 @@
         "128": "images/logo128.png"
     },
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "home.html",
         "default_icon": {
             "16": "images/logo16.png",
             "48": "images/logo48.png",

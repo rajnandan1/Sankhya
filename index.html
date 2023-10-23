@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sankhya</title>
-	<link rel="stylesheet" href="styles.css">
-	<style>
-		.main{
-			min-width: 440px;
-			background-color: #fefefe;
-			border-radius: 4px;
-			color: #141414;
-		}
-		img{
-			box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-		}
-		.warm{
-			padding: 5px 10px;
-			background-color: #141414;
-			color: #fefefe;
-			border-radius: 4px;
-			margin: 5px;
-			text-decoration: none;
-			float: right;
-		}
-	</style>
-</head>
-<body class="main">
-	<h1>
-		<img src="images/logo48.png" alt="" srcset="" style="float: right;">
-		Sankhya
-	</h1>
-	<p>
-		Sankhya quickly shows the Indian word for a selected number.
-	</p>
-	<h2>Features</h2>
-	<ul>
-		<li>
-			Works by text selections
-		</li>
-		<li>
-			Parses separators like comma. Example: 1,005 to One thousand five
-		</li>
-		<li>
-			Color gradient based on size of the number
-		</li>
-		<li>
-			Max limit 999999999999999999.99
-		</li>
-	</ul>
-	<center>
-		<img src="images/ss1.png" alt="" style="width: 80%;">
-	</center>
-	<a href="https://github.com/rajnandan1/BharatSankhya"  class="warm" target="_blank">Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span> in India</a>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sankhya</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/gh/rajnandan1/brutopia@latest/dist/assets/compiled/css/app.css" rel="stylesheet" crossorigin="anonymous" />
+        <meta name="description" content=""Sankhya" is a Chrome extension designed to provide users with a quick and convenient way to convert numerical figures into their corresponding Indian word representations. This extension is a useful tool for individuals who need to work with numerical data, such as currency amounts or numerical values in reports, documents, or web content. It simplifies the process of transforming numbers into words, which is a common requirement in various contexts.">
+		<style>
+            .main {
+               padding: 2rem;
+            }
+            img.logo{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+				border-radius: 6px;
+				background-color: rgb(255, 243, 106);
+            }
+            .warm {
+                /* padding: 5px 10px;
+                background-color: #141414;
+                color: #fefefe;
+                border-radius: 4px;
+                margin: 5px; */
+                text-decoration: none;
+                /* float: right; */
+            }
+        </style>
+    </head>
+    <body class="main">
+        <h1>
+			<img src="images/logo48.png" class="logo" alt="" srcset="" />
+			Sankhya
+		</h1>
+        <hr />
+        <div class="row">
+            <div class="col col-5">
+                <p>"Sankhya" is a Chrome extension designed to provide users with a quick and convenient way to convert numerical figures into their corresponding Indian word representations. This extension is a useful tool for individuals who need to work with numerical data, such as currency amounts or numerical values in reports, documents, or web content. It simplifies the process of transforming numbers into words, which is a common requirement in various contexts.</p>
+                <h2>Features</h2>
+                <ul>
+                    <li>Works by text selections</li>
+                    <li>Parses separators like comma. Example: 1,005 to One thousand five</li>
+                    <li>Color gradient based on size of the number</li>
+                    <li>Max limit 999999999999999</li>
+                </ul>
+                
+                <a href="https://github.com/rajnandan1/BharatSankhya" class="btn btn-dark" target="_blank">Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span> in India</a>
+            </div>
+            <div class="col col-7">
+                <h3>Sample Numbers. Selet a number</h3>
+                <div class="numbers"></div>
+                <script src="content.js"></script>
+                <script>
+                    function generateRandomNumberInRange(min, max) {
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                    }
+
+                    function generateRandomNumbersWithRanges(count, ranges) {
+                        const randomNumbers = [];
+
+                        for (let i = 0; i < count; i++) {
+                            const range = ranges[Math.floor(Math.random() * ranges.length)];
+                            const randomNumber = generateRandomNumberInRange(range[0], range[1]);
+                            if (i % 3 == 2) {
+                                randomNumbers.push(String(randomNumber) + "." + Math.floor(Math.random() * 100));
+                            } else {
+                                randomNumbers.push(String(randomNumber));
+                            }
+                        }
+
+                        return randomNumbers;
+                    }
+
+                    const ranges = [
+                        [1, 10],
+                        [10, 100],
+                        [100, 1000],
+                        [1000, 10000],
+                        [10000, 100000],
+                        [100000, 1000000],
+                        [1000000, 10000000],
+                        [10000000, 100000000],
+                        [100000000, 1000000000],
+                        [1000000000, 10000000000],
+                        [10000000000, 100000000000],
+                        [100000000000, 1000000000000],
+                    ];
+
+                    const randomNumbers = generateRandomNumbersWithRanges(ranges.length, ranges);
+
+                    for (let i = 0; i < randomNumbers.length; i++) {
+                        const element = randomNumbers[i];
+                        const p = document.createElement("p");
+                        p.innerHTML = element;
+                        p.classList.add("alert");
+                        p.classList.add("alert-primary");
+                        document.querySelector(".numbers").appendChild(p);
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
 </html>
