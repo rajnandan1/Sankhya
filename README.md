@@ -1,8 +1,8 @@
-# BharatSankhya
+# Sankhya
 
 ![Made with Love in India](https://madewithlove.org.in/badge.svg)
 
-Bharat Sankhya quickly get Indian word for a selected.
+Sankhya quickly shows the Indian word for a selected number.
 
 ## Features
 
