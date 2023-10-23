@@ -3,7 +3,6 @@
     "name": "Sankhya",
     "version": "1.0",
     "description": "Sankhya quickly shows the Indian word for a selected number.",
-    "permissions": ["activeTab"],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
