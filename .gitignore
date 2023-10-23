@@ -20,3 +20,19 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+# Package files
+*.jar
+
+# Maven
+target/
+dist/
