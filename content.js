@@ -74,16 +74,19 @@ function BharatSankhya(){
 
             const update = (evt, hide) => {
                 let selection = document.getSelection();
+				// alert(1)
                 this.range = selection && selection.rangeCount && selection.getRangeAt(0);
                 let res = "";
                 res = selection.toString().replace(/[^0-9. ]/g, "");
                 res = res.replace(/ +/g, " ");
+				res = res.trim();
+				 
                 if (res == "") {
                     this.updateRect(true);
                     return;
                 }
                 res = res.trim().split(" ")[0];
-                let extra = "";
+                
                 if (res >= 1000000000) {
                     let afterCrore = parseInt(res / 10000000);
 					let resCroreNum = String((res % 10000000).toFixed(2));
@@ -102,6 +105,7 @@ function BharatSankhya(){
             };
             document.querySelector("body").addEventListener("mouseup", update);
             document.querySelector("body").addEventListener("input", update);
+            document.querySelector("body").addEventListener("keydown", (evt) => update(evt, true));
 
             window.addEventListener("scroll", update);
             document.scrollingElement.addEventListener("scroll", update);
