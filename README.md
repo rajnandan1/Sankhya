@@ -2,7 +2,7 @@
 
 ![Made with Love in India](https://madewithlove.org.in/badge.svg)
 
-Sankhya quickly shows the Indian word for a selected number.
+Sankhya is a browser extension that quickly shows the Indian word for a selected number.
 
 ## Features
 
