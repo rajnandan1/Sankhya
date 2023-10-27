@@ -29,3 +29,4 @@ https://github.com/rajnandan1/BharatSankhya/assets/16224367/d8947cc9-d35a-4a96-a
 ## Roadmap
 - [ ] Support multiple configurations
 - [ ] Handle CSP block
+- [ ] Add copy button
