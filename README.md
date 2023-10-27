@@ -27,5 +27,5 @@ https://github.com/rajnandan1/BharatSankhya/assets/16224367/d8947cc9-d35a-4a96-a
 - For mozilla change the manifest version to 2 from 3
 
 ## Roadmap
-[-] Support multiple types
-[-] Handle CSP block
+- [ ] Support multiple types
+- [ ] Handle CSP block
