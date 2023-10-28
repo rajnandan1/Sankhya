@@ -50,12 +50,7 @@
                 margin-bottom: 5px;
             }
             body {
-                background-image: radial-gradient(circle at 85% 1%, hsla(190, 0%, 93%, 0.05) 0%, hsla(190, 0%, 93%, 0.05) 96%, transparent 96%, transparent 100%),
-                    radial-gradient(circle at 14% 15%, hsla(190, 0%, 93%, 0.05) 0%, hsla(190, 0%, 93%, 0.05) 1%, transparent 1%, transparent 100%),
-                    radial-gradient(circle at 60% 90%, hsla(190, 0%, 93%, 0.05) 0%, hsla(190, 0%, 93%, 0.05) 20%, transparent 20%, transparent 100%),
-                    radial-gradient(circle at 79% 7%, hsla(190, 0%, 93%, 0.05) 0%, hsla(190, 0%, 93%, 0.05) 78%, transparent 78%, transparent 100%),
-                    radial-gradient(circle at 55% 65%, hsla(190, 0%, 93%, 0.05) 0%, hsla(190, 0%, 93%, 0.05) 52%, transparent 52%, transparent 100%),
-                    linear-gradient(135deg, rgb(37, 56, 222), rgb(96, 189, 244));
+              background-image: radial-gradient(circle at center center, rgb(93, 60, 152),rgb(10, 3, 9));
                 color: #efefef !important;
             }
             h1,
@@ -66,6 +61,13 @@
             p {
                 color: #efefef !important;
             }
+			.alert-primary{
+				background-color: #1d1b25;
+				color: #fefefe;
+				border: 2px solid #1d1b25;
+				margin: 5px;
+				display: inline-block;
+			}
         </style>
     </head>
     <body class="main">
@@ -138,9 +140,11 @@
 				<br>
 				<p >Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span> in India</p>
             </div>
-            <div class="col col-12 col-md-7">
+            <div class="col col-12 col-md-3">
                 <h3>Sample Numbers. Select a number</h3>
-                <div class="numbers"></div>
+                <div class="numbers">
+
+				</div>
                 <script src="content.js"></script>
                 <script>
                     function generateRandomNumberInRange(min, max) {
@@ -182,7 +186,7 @@
 
                     for (let i = 0; i < randomNumbers.length; i++) {
                         const element = randomNumbers[i];
-                        const p = document.createElement("p");
+                        const p = document.createElement("span");
                         p.innerHTML = element;
                         p.classList.add("alert");
                         p.classList.add("alert-primary");
