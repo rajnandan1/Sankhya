@@ -85,6 +85,10 @@ function BharatSankhya(){
                     this.updateRect(true);
                     return;
                 }
+				if(isNaN(res[0])){
+					this.updateRect(true);
+					return;
+				}
                 res = res.trim().split(" ")[0];
                 
                 if (res >= 1000000000) {
@@ -148,8 +152,8 @@ function BharatSankhya(){
     const pop = document.getElementById("BharatSankhyaPop");
     const rangeRef = new RangeRef();
     const popper = new Popper(rangeRef, pop, {
-        placement: "top",
-        modifiers: { offset: { offset: "0,5" } },
+        placement: "bottom",
+        modifiers: { offset: { offset: "0,10" } },
     });
 
     rangeRef.rectChangedCallback = ({ width }) => {
@@ -171,6 +175,7 @@ BharatSankhyaPopMain.classList.add("popper");
 BharatSankhyaPopMain.classList.add("bubble-bottom");
 BharatSankhyaPopMain.id = "BharatSankhy-popper-content";
 BharatSankhyaPop.id = "BharatSankhyaPop";
+BharatSankhyaPop.style.height = "0px";
 BharatSankhyaPopMain.innerHTML = "BharatSankhya-popper-content";
 BharatSankhyaPop.appendChild(BharatSankhyaPopMain);
 document.body.appendChild(BharatSankhyaPop);

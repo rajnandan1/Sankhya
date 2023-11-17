@@ -9,12 +9,14 @@
     display: inline-block;
     opacity: 0;
     pointer-events: none;
+	height: 0px;
 }
 #BharatSankhyaPop .popper--visible {
     pointer-events: auto;
     animation: BharatSankhyaPoppop-upwards 180ms forwards linear;
     animation-delay: 0.2s;
-    transition: opacity 0s linear 0.2s;
+	height: fit-content;
+    transition: all 0s linear 0.2s;
 }
 
 
