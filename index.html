@@ -31,14 +31,14 @@
             body {
                 height: 100svh;
                 padding: 0;
-                background-image: url("images/testcirlcle2-min.png");
+                background-image: url('images/testcirlcle2-min.png');
                 color: #efefef !important;
                 background-repeat: no-repeat;
                 background-position: center bottom -14%;
                 background-color: #010101;
                 background-size: 960px;
             }
-            
+
             img.logo {
                 /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
                 /* border-radius: 6px; */
@@ -83,19 +83,19 @@
                 -webkit-backdrop-filter: blur(10.6px);
                 border: 5px solid rgba(255, 255, 255, 0.138);
 
-				min-width: 375px;
+                min-width: 375px;
                 position: absolute;
                 top: 150px;
                 left: 50%;
                 transform: translateX(-50%);
                 padding: 20px;
-				/* height: inherit; */
-				overflow-y: auto;
+                /* height: inherit; */
+                overflow-y: auto;
             }
         </style>
     </head>
     <body class="main">
-        <div class="glass container	">
+        <div class="glass container">
             <h1 class="mb-4">
                 <img src="images/sankhya_logo64.png" class="logo" alt="" srcset="" />
                 Sankhya
@@ -103,9 +103,8 @@
             <div class="row">
                 <div class="col col-12 col-md-6">
                     <p>
-                        "Sankhya" is a Browser extension designed to provide users with a quick and convenient way to convert numerical figures into their corresponding Indian word representations.
-                        This extension is a useful tool for individuals who need to work with numerical data, such as currency amounts or numerical values in reports, documents, or web content. It
-                        simplifies the process of transforming numbers into words, which is a common requirement in various contexts.
+                        "Sankhya" is a Browser extension designed to provide users with a quick and convenient way to convert numerical figures into their corresponding Indian word representations. This extension is a useful tool for individuals who need to work with numerical data, such as currency
+                        amounts or numerical values in reports, documents, or web content. It simplifies the process of transforming numbers into words, which is a common requirement in various contexts.
                     </p>
                     <h2>Features</h2>
                     <ul>
@@ -137,14 +136,8 @@
                         Firefox Extension
                         <svg width="800px" height="800px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
                             <ellipse cx="50" cy="50" rx="24" ry="24" fill="#80e" />
-                            <path
-                                d="M50 42c-14-7-11-8-16-11-1-4-1-8 0-12-5 2-9 5-12 9-1-4-1.4-7-1-12C8 24 2 38 2 50c-0 31 26 49 48 49 22 0 48-16 48-49 0-5 0-9-3-16-9 21-23 40-45 40-8 0-23-4-23-25 7-2 16-3 23-7z"
-                                fill="#f73"
-                            />
-                            <path
-                                d="M50 42c-17 6-20-8-35 0 3 6 7 7 11 7 0 20 12 26 24 26 19 0 37-9 45-41-7-17-23-19-29-34-9 6-15 14-16 26 12 0 24 10 24 24 0 15-14 23-24 23-5 0-19-2-21-17 2-6 8-8 16-9 3-1 4-3 5-5z"
-                                fill="#fc3"
-                            />
+                            <path d="M50 42c-14-7-11-8-16-11-1-4-1-8 0-12-5 2-9 5-12 9-1-4-1.4-7-1-12C8 24 2 38 2 50c-0 31 26 49 48 49 22 0 48-16 48-49 0-5 0-9-3-16-9 21-23 40-45 40-8 0-23-4-23-25 7-2 16-3 23-7z" fill="#f73" />
+                            <path d="M50 42c-17 6-20-8-35 0 3 6 7 7 11 7 0 20 12 26 24 26 19 0 37-9 45-41-7-17-23-19-29-34-9 6-15 14-16 26 12 0 24 10 24 24 0 15-14 23-24 23-5 0-19-2-21-17 2-6 8-8 16-9 3-1 4-3 5-5z" fill="#fc3" />
                         </svg>
                     </a>
                     <a class="btn btn-dark" target="_blank" href="https://www.buymeacoffee.com/rajnandan1">
@@ -162,7 +155,8 @@
                     <p>Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span> in India</p>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <h3>Sample Numbers. Select a number</h3>
+                    <h3>Select a number and press <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>.</kbd></h3>
+
                     <div class="numbers"></div>
                 </div>
             </div>
@@ -181,7 +175,7 @@
                     const range = ranges[Math.floor(Math.random() * ranges.length)];
                     const randomNumber = generateRandomNumberInRange(range[0], range[1]);
                     if (i % 3 == 2) {
-                        randomNumbers.push(String(randomNumber) + "." + Math.floor(Math.random() * 100));
+                        randomNumbers.push(String(randomNumber) + '.' + Math.floor(Math.random() * 100));
                     } else {
                         randomNumbers.push(String(randomNumber));
                     }
@@ -209,11 +203,11 @@
 
             for (let i = 0; i < randomNumbers.length; i++) {
                 const element = randomNumbers[i];
-                const p = document.createElement("span");
+                const p = document.createElement('span');
                 p.innerHTML = element;
-                p.classList.add("alert");
-                p.classList.add("alert-primary");
-                document.querySelector(".numbers").appendChild(p);
+                p.classList.add('alert');
+                p.classList.add('alert-primary');
+                document.querySelector('.numbers').appendChild(p);
             }
         </script>
     </body>

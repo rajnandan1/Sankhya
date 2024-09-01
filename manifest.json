@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Sankhya",
-    "version": "1.4",
+    "version": "1.6",
     "description": "Sankhya quickly shows the Indian word for a selected number.",
     "permissions": ["activeTab"],
     "content_scripts": [
@@ -25,11 +25,6 @@
             "16": "images/sankhya_logo16.png",
             "48": "images/sankhya_logo48.png",
             "128": "images/sankhya_logo128.png"
-        }
-    },
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "sankhya@frogment.com"
         }
     }
 }
